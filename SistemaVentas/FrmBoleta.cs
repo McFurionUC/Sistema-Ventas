@@ -12,17 +12,17 @@ namespace SistemaVentas
 {
     public partial class FrmBoleta : Form
     {
-        public FrmBoleta()
+        private Form FormPrincipal;
+        public FrmBoleta(Form FrmPrincipal)
         {
             InitializeComponent();
+            this.FormPrincipal = FrmPrincipal;
+            this.FormClosed += new FormClosedEventHandler(FormBoleta_FrmClosed);
         }
         //Llamar al mapeado relacional a traves de un objeto
         VentasDataContext ventas = new VentasDataContext();
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-            ListarDetalles();
-        }
+
         private void ListarDetalles()
         {
             // Consulta para cargar los detalles en el DataGridView
@@ -94,6 +94,17 @@ namespace SistemaVentas
             {
                 MessageBox.Show("Error al buscar la boleta: " + ex.Message);
             }
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCliente frm = new FrmCliente(this);
+            frm.Show(); 
+        }
+        
+        private void FormBoleta_FrmClosed (object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal.Show();
         }
     }
 }

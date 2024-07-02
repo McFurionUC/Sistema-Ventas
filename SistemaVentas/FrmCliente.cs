@@ -12,9 +12,12 @@ namespace SistemaVentas
 {
     public partial class FrmCliente : Form
     {
-        public FrmCliente()
+        private Form FormPrincipal;
+        public FrmCliente(Form FrmPrincipal)
         {
             InitializeComponent();
+            this.FormPrincipal = FrmPrincipal;
+            this.FormClosed += new FormClosedEventHandler(FormCliente_FrmClosed);
         }
 
         // Llamar al mapeado objeto relacional a través de un objeto 
@@ -111,16 +114,42 @@ namespace SistemaVentas
             }
         }
 
-
-
-
-
         private void txtApellidoCliente_TextChanged(object sender, EventArgs e)
         {
 
         }
+        private void FormCliente_FrmClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CodCliente = txtCodCliente.Text;
+                string Compras = txtCompras.Text;
+                var ConsultaClienteCompras = from B in ventas.Boleta
+                                             join C in ventas.Cliente on B.CodCliente equals C.CodCliente
+                                             where B.CodCliente == CodCliente
+                                             select new
+                                             {
+                                                 CodCliente = B.NroBoleta,
+                                                 Vendedor = B.CodVendedor
+
+                                             };
+                dgvClientes.DataSource = ConsultaClienteCompras.ToList();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+ 
 
 
+
+                
+        }
     }
 }
 

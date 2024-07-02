@@ -40,16 +40,20 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPrecioFinal = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvDetalle
             // 
             this.dgvDetalle.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalle.Location = new System.Drawing.Point(339, 12);
+            this.dgvDetalle.Location = new System.Drawing.Point(358, 44);
             this.dgvDetalle.Name = "dgvDetalle";
-            this.dgvDetalle.Size = new System.Drawing.Size(415, 426);
+            this.dgvDetalle.Size = new System.Drawing.Size(382, 375);
             this.dgvDetalle.TabIndex = 0;
             // 
             // txtNroBoleta
@@ -155,7 +159,31 @@
             this.txtPrecioFinal.Size = new System.Drawing.Size(100, 20);
             this.txtPrecioFinal.TabIndex = 15;
             // 
-            // Form4
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.vendedorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // vendedorToolStripMenuItem
+            // 
+            this.vendedorToolStripMenuItem.Name = "vendedorToolStripMenuItem";
+            this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.vendedorToolStripMenuItem.Text = "Vendedor";
+            // 
+            // FrmBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,9 +201,13 @@
             this.Controls.Add(this.codigo);
             this.Controls.Add(this.txtNroBoleta);
             this.Controls.Add(this.dgvDetalle);
-            this.Name = "Form4";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "FrmBoleta";
             this.Text = "Detalle";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +227,8 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPrecioFinal;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vendedorToolStripMenuItem;
     }
 }

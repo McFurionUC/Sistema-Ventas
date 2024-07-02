@@ -44,3 +44,16 @@ D:\Portafolio\SistemaVentas\Sistema-Ventas\Formulario_Cliente\obj\Debug\SistemaV
 D:\Portafolio\SistemaVentas\Sistema-Ventas\Formulario_Cliente\obj\Debug\SistemaVentas.exe
 D:\Portafolio\SistemaVentas\Sistema-Ventas\Formulario_Cliente\obj\Debug\SistemaVentas.pdb
 D:\Portafolio\SistemaVentas\Sistema-Ventas\Formulario_Cliente\obj\Debug\SistemaVentas.Form4.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\SistemaVentas.exe.config
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\SistemaVentas.exe
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\SistemaVentas.pdb
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.AssemblyReference.cache
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmVendedor.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmCliente.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmBoleta.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.Properties.Resources.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.GenerateResource.cache
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.CoreCompileInputs.cache
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmPrincipal.resources
