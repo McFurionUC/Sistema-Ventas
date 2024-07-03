@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,9 +13,16 @@ namespace SistemaVentas
 {
     public partial class FrmVendedor : Form
     {
-        public FrmVendedor()
+        private Form FormPrincipal;
+        public FrmVendedor(Form FrmPrincipal)
         {
             InitializeComponent();
+            this.FormPrincipal = FrmPrincipal;
+            this.FormClosed += new FormClosedEventHandler(FormPrincipal_FrmClosed);
+        }
+        private void FormPrincipal_FrmClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal.Show();
         }
 
         //Llamar al mapeado objeto relacional a travez de un objeto 
@@ -31,7 +39,7 @@ namespace SistemaVentas
             {
                 var consulta = from V in ventas.Vendedor
                                select V;
-
+                
                 dgvVendedor.DataSource = consulta.ToList(); // Convierte la consulta a una lista y asigna al DataSource del DataGridView
             }
             catch (Exception ex)
@@ -172,6 +180,18 @@ namespace SistemaVentas
             {
                 MessageBox.Show("Error al eliminar vendedor: " + ex.Message);
             }
+        }
+
+        private void boletaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBoleta frmBoleta = new FrmBoleta(this);
+            frmBoleta.Show();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCliente frmCliente = new FrmCliente(this);
+            frmCliente.Show();
         }
     }
 }

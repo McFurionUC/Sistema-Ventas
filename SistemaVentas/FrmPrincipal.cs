@@ -28,9 +28,9 @@ namespace SistemaVentas
 
         private void btnCasa_Click(object sender, EventArgs e)
         {
-            FrmBoleta frmBoleta = new FrmBoleta(this);
+            FrmProducto frmProducto = new FrmProducto(this);
 
-            frmBoleta.Show();
+            frmProducto.Show();
             this.Hide();
         }
 

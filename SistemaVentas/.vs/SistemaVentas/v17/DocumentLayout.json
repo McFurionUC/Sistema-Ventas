@@ -1,12 +1,218 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\ventas.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:ventas.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmboleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmboleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|d:\\portafolio\\grupo\\bdventas\\sistemaventas\\frmboleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5605818-DFFF-494F-8524-E3B72E956D08}|SistemaVentas.csproj|solutionrelative:frmboleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 244,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmVendedor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmVendedor.cs",
+              "RelativeDocumentMoniker": "FrmVendedor.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmVendedor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmVendedor.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:41:51.446Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "FrmCliente.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:36:18.548Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "FrmProducto.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:12:31.328Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCliente.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "FrmCliente.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmCliente.cs",
+              "RelativeToolTip": "FrmCliente.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAYwIIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:36:19.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmVendedor.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmVendedor.cs",
+              "RelativeDocumentMoniker": "FrmVendedor.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmVendedor.cs",
+              "RelativeToolTip": "FrmVendedor.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAwCoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:41:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmPrincipal.cs",
+              "RelativeToolTip": "FrmPrincipal.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAtwCEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:39:30.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmProducto.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "FrmProducto.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmProducto.cs",
+              "RelativeToolTip": "FrmProducto.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:17:27.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T16:21:17.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:33:54.361Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ventas.dbml",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\Ventas.dbml",
+              "RelativeDocumentMoniker": "Ventas.dbml",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\Ventas.dbml",
+              "RelativeToolTip": "Ventas.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-07-03T16:14:15.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmBoleta.cs",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmBoleta.cs",
+              "RelativeDocumentMoniker": "FrmBoleta.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmBoleta.cs",
+              "RelativeToolTip": "FrmBoleta.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAIwBIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:42:06.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmBoleta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmBoleta.cs",
+              "RelativeDocumentMoniker": "FrmBoleta.cs",
+              "ToolTip": "D:\\Portafolio\\Grupo\\BDVentas\\SistemaVentas\\FrmBoleta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmBoleta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:42:00.48Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

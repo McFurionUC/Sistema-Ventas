@@ -128,7 +128,7 @@ namespace SistemaVentas
             try
             {
                 string CodCliente = txtCodCliente.Text;
-                string Compras = txtCompras.Text;
+                string Compras = " ";
                 var ConsultaClienteCompras = from B in ventas.Boleta
                                              join C in ventas.Cliente on B.CodCliente equals C.CodCliente
                                              where B.CodCliente == CodCliente

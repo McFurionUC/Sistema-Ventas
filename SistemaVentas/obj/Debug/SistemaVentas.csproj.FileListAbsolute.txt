@@ -57,3 +57,4 @@ D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.csproj.CoreCo
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmPrincipal.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmProducto.resources
