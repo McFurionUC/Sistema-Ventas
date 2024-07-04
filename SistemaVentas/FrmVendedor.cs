@@ -8,12 +8,18 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaBaseDatos;
+using CapaEntidad;
 
 namespace SistemaVentas
 {
     public partial class FrmVendedor : Form
     {
+        //Llamo a la clase del formulario
+
         private Form FormPrincipal;
+
+
         public FrmVendedor(Form FrmPrincipal)
         {
             InitializeComponent();

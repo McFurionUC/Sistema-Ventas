@@ -1,0 +1,12 @@
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaBaseDatos.dll
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaBaseDatos.pdb
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaBaseDatos.dll.config
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\obj\Debug\CapaEnti.526B9C87.Up2Date
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaNegocio.dll
+D:\Portafolio\Grupo\BDVentas\CapaEntidad\bin\Debug\CapaNegocio.pdb

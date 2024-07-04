@@ -41,7 +41,7 @@
             this.btnCasa.BackColor = System.Drawing.Color.Transparent;
             this.btnCasa.ForeColor = System.Drawing.Color.Transparent;
             this.btnCasa.Image = global::SistemaVentas.Properties.Resources.casa;
-            this.btnCasa.Location = new System.Drawing.Point(199, 273);
+            this.btnCasa.Location = new System.Drawing.Point(233, 226);
             this.btnCasa.Name = "btnCasa";
             this.btnCasa.Size = new System.Drawing.Size(116, 111);
             this.btnCasa.TabIndex = 3;
@@ -52,7 +52,7 @@
             // 
             this.btnBoleta.BackColor = System.Drawing.Color.Transparent;
             this.btnBoleta.Image = global::SistemaVentas.Properties.Resources.boleta1;
-            this.btnBoleta.Location = new System.Drawing.Point(545, 273);
+            this.btnBoleta.Location = new System.Drawing.Point(540, 226);
             this.btnBoleta.Name = "btnBoleta";
             this.btnBoleta.Size = new System.Drawing.Size(118, 112);
             this.btnBoleta.TabIndex = 2;
@@ -65,7 +65,7 @@
             this.btnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCliente.ForeColor = System.Drawing.Color.Transparent;
             this.btnCliente.Image = global::SistemaVentas.Properties.Resources.cliente;
-            this.btnCliente.Location = new System.Drawing.Point(378, 274);
+            this.btnCliente.Location = new System.Drawing.Point(388, 226);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(111, 111);
             this.btnCliente.TabIndex = 1;
@@ -74,13 +74,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox1.Image = global::SistemaVentas.Properties.Resources.fondo1;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.pictureBox1.Location = new System.Drawing.Point(-340, -280);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1302, 749);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblInicio
             // 
@@ -88,7 +88,7 @@
             this.lblInicio.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInicio.ForeColor = System.Drawing.Color.Black;
-            this.lblInicio.Location = new System.Drawing.Point(284, 48);
+            this.lblInicio.Location = new System.Drawing.Point(288, 71);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(314, 85);
             this.lblInicio.TabIndex = 4;
@@ -99,6 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(875, 453);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.btnCasa);

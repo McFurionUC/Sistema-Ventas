@@ -7,36 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
+using CapaEntidad;
+using CapaEntidad.EntidadBoleta;
 
 namespace SistemaVentas
 {
     public partial class FrmBoleta : Form
     {
         private Form FormPrincipal;
+        //Llamar al mapeado relacional a traves de un objeto
+        
+        BoletaBL boleta = new BoletaBL();
+        EBoleta eBoleta = new EBoleta();
+
+
+
+
+
         public FrmBoleta(Form FrmPrincipal)
         {
             InitializeComponent();
+            ListarDetalles(null);
             this.FormPrincipal = FrmPrincipal;
-            this.FormClosed += new FormClosedEventHandler(FormBoleta_FrmClosed);
+            this.FormClosed += new FormClosedEventHandler(FormPrincipal_FrmClosed);
+
         }
-        //Llamar al mapeado relacional a traves de un objeto
-        VentasDataContext ventas = new VentasDataContext();
-
-
-        private void ListarDetalles()
+        private void FormPrincipal_FrmClosed(object sender, FormClosedEventArgs e)
         {
-            // Consulta para cargar los detalles en el DataGridView
-            var detalles = from D in ventas.Detalle
-                           select new
-                           {
-                               D.NroBoleta,
-                               D.CodProducto,
-                               D.Cantidad,
-                               D.PrecioUnitario
-                           };
+            FormPrincipal.Show();
+        }
+        
+
+
+        private void ListarDetalles(int ? nroBoleta)
+        {
 
             // Asignar la lista de detalles al DataGridView
-            dgvDetalle.DataSource = detalles.ToList();
+            if (nroBoleta.HasValue)
+            {
+                dgvDetalle.DataSource = boleta.ObtenerDetalles(nroBoleta);
+                
+            }
+            else
+            {
+                dgvDetalle.DataSource = boleta.ObtenerBoletas();
+            }
+            
         }
         private void codigo_Click(object sender, EventArgs e)
         {
@@ -45,55 +62,28 @@ namespace SistemaVentas
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-            string nroBoletaText = txtNroBoleta.Text.Trim();
-
-            if (string.IsNullOrWhiteSpace(nroBoletaText))
+            int nroBoleta = Convert.ToInt32(txtNroBoleta.Text.Trim());
+            eBoleta.NroBoleta = nroBoleta;
+            MessageBox.Show(" "+nroBoleta);
+            var resultado =eBoleta.Buscar();
+            if (resultado != null)
             {
-                MessageBox.Show("Por favor, ingrese un número de boleta.");
-                return;
+                txtCantidad.Text = Convert.ToString(resultado.Item2);
+                txtCodProducto.Text = Convert.ToString(resultado.Item1);
+                txtPrecioUnitario.Text = Convert.ToString(resultado.Item3);
+                ListarDetalles(nroBoleta); 
+                txtPrecioFinal.Text = Convert.ToString(resultado.Item3);
             }
-
-            try
+            else
             {
-                // Convertir nroBoletaText a int para comparar con D.NroBoleta
-                if (int.TryParse(nroBoletaText, out int nroBoleta))
-                {
-                    var boletaEncontrada = (from D in ventas.Detalle
-                                            where D.NroBoleta == nroBoleta
-                                            select D).FirstOrDefault();
-
-                    if (boletaEncontrada != null)
-                    {
-                        // Mostrar los datos de la boleta encontrada en los campos de texto
-                        txtCodProducto.Text = boletaEncontrada.CodProducto;
-                        txtCantidad.Text = boletaEncontrada.Cantidad.ToString();
-                        txtPrecioUnitario.Text = boletaEncontrada.PrecioUnitario.ToString();
-
-                        // Calcular el precio final
-                        decimal cantidad = boletaEncontrada.Cantidad ?? 0; // Convertir int? a decimal
-                        decimal precioUnitario = boletaEncontrada.PrecioUnitario ?? 0; // Convertir int? a decimal
-                        decimal precioFinal = cantidad * precioUnitario;
-
-                        // Mostrar el precio final en el TextBox correspondiente
-                        txtPrecioFinal.Text = precioFinal.ToString();
-
-                        // Opcional: Mostrar solo el resultado en el DataGridView
-                        dgvDetalle.DataSource = new[] { boletaEncontrada };
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se encontró la boleta con el número especificado.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("El número de boleta ingresado no es válido.");
-                }
+                MessageBox.Show("Error al buscar la  boleta");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al buscar la boleta: " + ex.Message);
-            }
+            
+
+
+
+
+
         }
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,6 +95,18 @@ namespace SistemaVentas
         private void FormBoleta_FrmClosed (object sender, FormClosedEventArgs e)
         {
             FormPrincipal.Show();
+        }
+
+        private void FrmBoleta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGenerarBoleta_Click(object sender, EventArgs e)
+        {
+            GenerarBoleta frm = new GenerarBoleta();
+            frm.Show();
+            this.Hide();
         }
     }
 }

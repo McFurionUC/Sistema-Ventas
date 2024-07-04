@@ -5,21 +5,26 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace SistemaVentas
 {
     public partial class FrmPrincipal : Form
     {
+ 
         public FrmPrincipal()
         {
             InitializeComponent();
            
+           
         
         }
 
+        
         private void FrmPrincipal_load(object sender,EventArgs e )
         {
            
@@ -48,6 +53,11 @@ namespace SistemaVentas
 
             frmCliente.Show();
             this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,7 @@
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\bin\Debug\CapaBaseDatos.dll.config
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\bin\Debug\CapaBaseDatos.dll
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\bin\Debug\CapaBaseDatos.pdb
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\obj\Debug\CapaBaseDatos.csproj.AssemblyReference.cache
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\obj\Debug\CapaBaseDatos.csproj.CoreCompileInputs.cache
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\obj\Debug\CapaBaseDatos.dll
+D:\Portafolio\Grupo\BDVentas\CapaBaseDatos\obj\Debug\CapaBaseDatos.pdb

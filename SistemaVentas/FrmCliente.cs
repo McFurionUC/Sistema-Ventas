@@ -7,53 +7,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaBaseDatos;
+using CapaEntidad;
+using CapaNegocio;
 
 namespace SistemaVentas
 {
     public partial class FrmCliente : Form
     {
         private Form FormPrincipal;
+        // Llamar al mapeado objeto relacional a través de un objeto 
+            VentasDataContext ventas = new VentasDataContext();
+        ClienteBL cliente = new ClienteBL();
+        ECliente eCliente = new ECliente();
         public FrmCliente(Form FrmPrincipal)
         {
             InitializeComponent();
+            
             this.FormPrincipal = FrmPrincipal;
             this.FormClosed += new FormClosedEventHandler(FormCliente_FrmClosed);
+
         }
 
-        // Llamar al mapeado objeto relacional a través de un objeto 
-        VentasDataContext ventas = new VentasDataContext();
+        
 
         // Crear procedimiento para listar la tabla Cliente
         public void ListarClientes()
         {
-            var consulta = from C in ventas.Cliente
-                           select C;
-            dgvClientes.DataSource = consulta;
+            dgvClientes.DataSource = null;
+            dgvClientes.DataSource = cliente.Listar();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-            ListarClientes();
-        }
+       
 
 
         private void BtnAgregar_Click_1(object sender, EventArgs e)
         {
-            Cliente clienteAgregar = new Cliente();
-            clienteAgregar.Apellidos = txtApellidoCliente.Text;
-            clienteAgregar.Nombres = txtNombreCliente.Text;
-            clienteAgregar.CodCliente = txtCodCliente.Text;
-            clienteAgregar.Direccion = txtDireccionCliente.Text;
-            ventas.Cliente.InsertOnSubmit(clienteAgregar);
-            try
+            if (string.IsNullOrWhiteSpace(txtCodCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtApellidoCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtNombreCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtDireccionCliente.Text))
             {
-                ventas.SubmitChanges(); // Confirma la transacción
-                txtCodCliente.Clear(); txtNombreCliente.Clear(); txtApellidoCliente.Clear(); txtDireccionCliente.Clear();
-                ListarClientes();
+                MessageBox.Show("Todos los campos deben ser llenados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si algún campo está vacío
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error: " + ex.Message);
+                eCliente.Apellido = txtApellidoCliente.Text.Trim();
+                eCliente.Nombre = txtNombreCliente.Text.Trim();
+                eCliente.Direccion = txtDireccionCliente.Text.Trim();
+                eCliente.CodCliente = txtCodCliente.Text.Trim();
+                string respuesta = eCliente.Agregar();
+                ListarClientes();
+                MessageBox.Show(respuesta);
+                
+
             }
         }
 
@@ -63,55 +71,50 @@ namespace SistemaVentas
         private void BtnEliminar_Click_1(object sender, EventArgs e)
         {
             // Obtener el código del cliente a eliminar
-            var CodClienteEliminar = (from C in ventas.Cliente
-                                      where C.CodCliente.Contains(txtCodCliente.Text)
-                                      select C).First();
-
-            ventas.Cliente.DeleteOnSubmit(CodClienteEliminar);
-            try
+            if (string.IsNullOrWhiteSpace(txtCodCliente.Text) )
+            
             {
-                ventas.SubmitChanges(); // Confirma la eliminación
-                txtCodCliente.Clear(); txtNombreCliente.Clear(); txtApellidoCliente.Clear(); txtDireccionCliente.Clear();
-                ListarClientes();
+                MessageBox.Show("Tienes que llenar el codigo del cliente para poder eliminarlo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si algún campo está vacío
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error: " + ex.Message);
+                eCliente.CodCliente = txtCodCliente.Text.Trim();
+                string respuesta = eCliente.Eliminar();
+                ListarClientes();
+                MessageBox.Show(respuesta);
+                
+
             }
         }
-
-
-
-
 
 
 
         private void BtnActualizar_Click_1(object sender, EventArgs e)
         {
             // Buscar el cliente a actualizar
-            var clienteActualizar = (from C in ventas.Cliente
-                                     where C.CodCliente.Contains(txtCodCliente.Text)
-                                     select C).First();
-
-            if (clienteActualizar != null)
+            if (string.IsNullOrWhiteSpace(txtCodCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtApellidoCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtNombreCliente.Text) ||
+            string.IsNullOrWhiteSpace(txtDireccionCliente.Text))
             {
-                // Actualizar los campos del cliente
-                clienteActualizar.Nombres = txtNombreCliente.Text.Trim();
-                clienteActualizar.Apellidos = txtApellidoCliente.Text.Trim();
-                clienteActualizar.Direccion = txtDireccionCliente.Text.Trim();
-
-                try
-                {
-                    ventas.SubmitChanges(); // Confirmar los cambios
-                    MessageBox.Show("Cliente actualizado correctamente.");
-                    txtCodCliente.Clear(); txtNombreCliente.Clear(); txtApellidoCliente.Clear(); txtDireccionCliente.Clear();
-                    ListarClientes(); // Actualizar la lista de clientes en la interfaz
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
+                MessageBox.Show("Todos los campos deben ser llenados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Salir del método si algún campo está vacío
             }
+            else
+            {
+                eCliente.Apellido = txtApellidoCliente.Text.Trim();
+                eCliente.Nombre = txtNombreCliente.Text.Trim();
+                eCliente.Direccion = txtDireccionCliente.Text.Trim();
+                eCliente.CodCliente = txtCodCliente.Text.Trim();
+                string respuesta = eCliente.Actualizar();
+                dgvClientes.DataSource = null;
+                ListarClientes();
+                MessageBox.Show(respuesta);
+                
+
+            }
+
         }
 
         private void txtApellidoCliente_TextChanged(object sender, EventArgs e)
@@ -123,32 +126,16 @@ namespace SistemaVentas
             FormPrincipal.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void FrmCliente_Load(object sender, EventArgs e)
         {
-            try
-            {
-                string CodCliente = txtCodCliente.Text;
-                string Compras = " ";
-                var ConsultaClienteCompras = from B in ventas.Boleta
-                                             join C in ventas.Cliente on B.CodCliente equals C.CodCliente
-                                             where B.CodCliente == CodCliente
-                                             select new
-                                             {
-                                                 CodCliente = B.NroBoleta,
-                                                 Vendedor = B.CodVendedor
+            ListarClientes();
+        }
 
-                                             };
-                dgvClientes.DataSource = ConsultaClienteCompras.ToList();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show($"Error : {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
- 
+        private void label6_Click(object sender, EventArgs e)
+        {
 
-
-
-                
         }
     }
 }

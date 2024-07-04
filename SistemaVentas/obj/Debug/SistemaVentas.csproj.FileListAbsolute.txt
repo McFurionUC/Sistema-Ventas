@@ -58,3 +58,12 @@ D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.exe
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.pdb
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmPrincipal.resources
 D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.FrmProducto.resources
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaBaseDatos.dll
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaBaseDatos.pdb
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaBaseDatos.dll.config
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaV.1E85D3D6.Up2Date
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaEntidad.dll
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaNegocio.dll
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaEntidad.pdb
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\bin\Debug\CapaNegocio.pdb
+D:\Portafolio\Grupo\BDVentas\SistemaVentas\obj\Debug\SistemaVentas.GenerarBoleta.resources

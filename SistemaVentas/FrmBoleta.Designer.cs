@@ -43,6 +43,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGenerarBoleta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,16 +59,16 @@
             // 
             // txtNroBoleta
             // 
-            this.txtNroBoleta.Location = new System.Drawing.Point(213, 44);
+            this.txtNroBoleta.Location = new System.Drawing.Point(168, 44);
             this.txtNroBoleta.Name = "txtNroBoleta";
-            this.txtNroBoleta.Size = new System.Drawing.Size(79, 20);
+            this.txtNroBoleta.Size = new System.Drawing.Size(148, 20);
             this.txtNroBoleta.TabIndex = 5;
             // 
             // codigo
             // 
             this.codigo.AutoSize = true;
             this.codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codigo.ForeColor = System.Drawing.Color.Transparent;
+            this.codigo.ForeColor = System.Drawing.Color.Black;
             this.codigo.Location = new System.Drawing.Point(3, 46);
             this.codigo.Name = "codigo";
             this.codigo.Size = new System.Drawing.Size(85, 18);
@@ -78,7 +79,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 18);
@@ -89,14 +90,14 @@
             // 
             this.txtCodProducto.Location = new System.Drawing.Point(168, 91);
             this.txtCodProducto.Name = "txtCodProducto";
-            this.txtCodProducto.Size = new System.Drawing.Size(124, 20);
+            this.txtCodProducto.Size = new System.Drawing.Size(148, 20);
             this.txtCodProducto.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(3, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 18);
@@ -105,23 +106,23 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(132, 146);
+            this.txtCantidad.Location = new System.Drawing.Point(168, 146);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(160, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(148, 20);
             this.txtCantidad.TabIndex = 10;
             // 
             // txtPrecioUnitario
             // 
-            this.txtPrecioUnitario.Location = new System.Drawing.Point(132, 204);
+            this.txtPrecioUnitario.Location = new System.Drawing.Point(168, 204);
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
-            this.txtPrecioUnitario.Size = new System.Drawing.Size(160, 20);
+            this.txtPrecioUnitario.Size = new System.Drawing.Size(148, 20);
             this.txtPrecioUnitario.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(3, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 18);
@@ -130,23 +131,24 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.BackColor = System.Drawing.Color.OliveDrab;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Khaki;
-            this.btnBuscar.Location = new System.Drawing.Point(132, 315);
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuscar.Location = new System.Drawing.Point(33, 310);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(96, 44);
+            this.btnBuscar.Size = new System.Drawing.Size(96, 28);
             this.btnBuscar.TabIndex = 13;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(83, 254);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(9, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 18);
             this.label4.TabIndex = 14;
@@ -154,9 +156,9 @@
             // 
             // txtPrecioFinal
             // 
-            this.txtPrecioFinal.Location = new System.Drawing.Point(192, 254);
+            this.txtPrecioFinal.Location = new System.Drawing.Point(168, 254);
             this.txtPrecioFinal.Name = "txtPrecioFinal";
-            this.txtPrecioFinal.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioFinal.Size = new System.Drawing.Size(148, 20);
             this.txtPrecioFinal.TabIndex = 15;
             // 
             // menuStrip1
@@ -183,12 +185,27 @@
             this.vendedorToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.vendedorToolStripMenuItem.Text = "Vendedor";
             // 
+            // btnGenerarBoleta
+            // 
+            this.btnGenerarBoleta.BackColor = System.Drawing.Color.OliveDrab;
+            this.btnGenerarBoleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarBoleta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGenerarBoleta.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGenerarBoleta.Location = new System.Drawing.Point(168, 310);
+            this.btnGenerarBoleta.Name = "btnGenerarBoleta";
+            this.btnGenerarBoleta.Size = new System.Drawing.Size(148, 28);
+            this.btnGenerarBoleta.TabIndex = 17;
+            this.btnGenerarBoleta.Text = "Generar Boleta";
+            this.btnGenerarBoleta.UseVisualStyleBackColor = false;
+            this.btnGenerarBoleta.Click += new System.EventHandler(this.btnGenerarBoleta_Click);
+            // 
             // FrmBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGenerarBoleta);
             this.Controls.Add(this.txtPrecioFinal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnBuscar);
@@ -205,6 +222,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmBoleta";
             this.Text = "Detalle";
+            this.Load += new System.EventHandler(this.FrmBoleta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -230,5 +248,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendedorToolStripMenuItem;
+        private System.Windows.Forms.Button btnGenerarBoleta;
     }
 }

@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BDVentasDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDVentasDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,13 +78,14 @@
     <Compile Include="FrmBoleta.Designer.cs">
       <DependentUpon>FrmBoleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarBoleta.Designer.cs">
+      <DependentUpon>GenerarBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ventas.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ventas.dbml</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +101,9 @@
     <EmbeddedResource Include="FrmBoleta.resx">
       <DependentUpon>FrmBoleta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerarBoleta.resx">
+      <DependentUpon>GenerarBoleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,20 +114,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="BDVentasDataSet.xsc">
-      <DependentUpon>BDVentasDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BDVentasDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDVentasDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BDVentasDataSet.xss">
-      <DependentUpon>BDVentasDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Ventas.dbml.layout">
-      <DependentUpon>Ventas.dbml</DependentUpon>
-    </None>
+    <None Include=".editorconfig" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,11 +124,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Ventas.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Ventas.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -166,6 +148,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\boleta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaBaseDatos\CapaBaseDatos.csproj">
+      <Project>{8595b6d3-3e6c-45d9-aabe-d63f40e834cf}</Project>
+      <Name>CapaBaseDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{8940e86d-e0a5-4dd8-9903-73ba6b6b37bd}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{265e6db1-b5f6-46bd-b776-94183252086b}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
